@@ -1,6 +1,7 @@
-# Docker
-# Build a Docker image
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+- task: DeleteFiles@1
+  inputs:
+    SourceFolder: 
+    Contents: 'myFileShare'
 
 trigger:
 - master
